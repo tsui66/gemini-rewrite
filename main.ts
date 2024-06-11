@@ -1,7 +1,7 @@
 import { serve } from "https://deno.land/std@0.140.0/http/server.ts";
 import { buildPortal } from "./render.ts";
 
-const OPEN_AI_API_HOST = "api.openai.com";
+const GEMINI_API_HOST = "generativelanguage.googleapis.com";
 
 async function handler(request: Request): Promise<Response> {
   const url = new URL(request.url);
@@ -14,7 +14,7 @@ async function handler(request: Request): Promise<Response> {
     });
   }
   
-  url.host = OPEN_AI_API_HOST;
+  url.host = GEMINI_API_HOST;
   return await fetch(url, request);
 }
 
