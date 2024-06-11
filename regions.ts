@@ -13,7 +13,6 @@ interface RegionObject {
 
 export default {
 	"asia-east1": "Taiwan",
-	"asia-east2": "Hong Kong",
 	"asia-northeast1": "Tokyo",
 	"asia-northeast2": "Osaka",
 	"asia-northeast3": "Seoul",
